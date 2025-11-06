@@ -1,1 +1,93 @@
-/* Add styles here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+header {
+    background: rgb(255, 238, 0);
+    color: white;
+    padding-block: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    
+
+}
+
+.header-container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+ul {
+    display: flex;  
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+    
+
+a:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+main {
+    background: rgb(78, 175, 255);
+    min-height: calc(100svh - 11.8rem);
+    padding-block: 15.8rem 4rem;
+}
+
+section{
+    margin-bottom: 4rem;
+}
+
+.main-container {
+    max-width: 120rem;
+    margin: 0 auto;
+    line-height: 2.3rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+p {
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+
+footer {
+    background: rgb(255, 238, 0);
+   
+}

@@ -1,14 +1,82 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Posicoes no CSS</title>
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <header>
+    <div class="header-container" id="header">
+      <nav>
+        <ul>
+          <li>
+            <a href="#header">Home</a>
+          </li>
+          <li>
+            <a href="#static">Position: static</a>
+          </li>
+          <li>
+            <a href="#absolute">Position: absolute</a>
+          </li>
+          <li>
+            <a href="#fixed">Position: Fixed</a>
+          </li>
+          <li>
+            <a href="#relative">Position: Relative</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h1>Position no css</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <section id="static">
+      <h2>Position static</h2>
+      <p>O <strong>valor static</strong> é o padrão de todos os elementos HTML e mantém o elemento no <strong>fluxo normal do documento, ou seja, ele aparece na ordem em que foi escrito no HTML e ocupa o espaço naturalmente definido.</strong>. Elementos com position: static não se sobrepõem a outros elementos e não respondem às propriedades de posição como top, left, right ou bottom. Esse comportamento garante que o layout siga de forma previsível, como uma pilha de blocos, onde cada elemento empurra ou é empurrado pelo seguinte, facilitando a organização básica de textos, imagens e seções em uma página. Além disso, o static é ideal para quando não é necessário alterar o posicionamento padrão, mantendo o fluxo natural e harmonioso do conteúdo na tela.</p>
+      </section>
+
+
+      <section id="absolute">
+        <h2>Position absolute</h2>
+        <p>O <strong> valor absolute</strong> remove o elemento do fluxo normal do documento e o posiciona em relação ao seu ancestral mais próximo que possua uma propriedade de posição diferente de static. Caso não exista nenhum elemento pai posicionado, ele será alinhado em relação ao próprio documento. Isso permite colocar o elemento em qualquer lugar da página usando as propriedades top, left, right e bottom. Como o elemento absolute é retirado do fluxo, ele pode se sobrepor a outros e não interfere no posicionamento dos elementos ao seu redor, sendo muito útil para criar sobreposições, legendas, caixas flutuantes e componentes visuais mais precisos dentro de layouts. Além disso, ele é amplamente utilizado em conjunto com position: relative, onde o elemento pai relativo serve como referência para o posicionamento absoluto dos filhos. Essa combinação permite criar estruturas de layout flexíveis e controladas, em que cada componente pode ser posicionado de forma independente dentro de um contêiner. Entretanto, o uso excessivo de elementos com position: absolute pode tornar o design menos responsivo, já que eles não se ajustam automaticamente às mudanças de tamanho da tela, exigindo mais cuidado ao definir suas posições e dimensões em diferentes resoluções.</p>
+
+        <section id="fixed">
+          <h2>Position fixed</h2>
+          <p>O <strong>valor fixed</strong> também remove o elemento do fluxo normal, mas, diferente do absolute, ele é posicionado em relação à janela do navegador (viewport) e não ao seu elemento pai. Isso significa que, mesmo que a página seja rolada, o elemento permanece fixo no mesmo lugar da tela, sempre visível. É ideal para barras de navegação, botões de ação ou elementos que precisam acompanhar o usuário enquanto ele navega pelo conteúdo. Assim como o absolute, o elemento fixed se sobrepõe aos outros e não afeta o layout dos elementos ao seu redor, garantindo que ele continue ocupando a mesma posição na interface independentemente do deslocamento da página.
+          </p>
+
+          <section id="relative">
+            <h2>Position Relative</h2>
+            <p>
+              O <strong>valor relative</strong> mantém o elemento dentro do fluxo normal do documento, mas permite que ele seja deslocado em relação à sua posição original usando as propriedades top, left, right e bottom. Diferente do absolute, o espaço original do elemento ainda é preservado, ou seja, mesmo que ele se mova visualmente, os outros elementos continuam reconhecendo sua posição como se ele não tivesse sido deslocado. Isso é útil quando se deseja fazer pequenos ajustes de posicionamento sem quebrar o layout da página. Além disso, o position: relative é frequentemente usado como referência para elementos filhos com position: absolute, criando uma hierarquia de posicionamento controlada e previsível. Essa combinação permite alinhar elementos internos de forma precisa dentro de um contêiner específico. Outra vantagem do relative é que ele mantém o comportamento responsivo do layout, já que o elemento continua integrado ao fluxo e se adapta melhor a mudanças no tamanho da tela ou da janela do navegador.
+            </p>
+
+            
+          </section>
+         
+        </section>
+      </section>
+    </div>
+  </main>
+
+    <footer>
+      <p>Aprenda mais sobre esse conteudo aqui: </p>
+      <a href="https://www.youtube.com/live/5eUwS1qYW98" target="_blank">Video sobre position</a>
+    </footer>
+  </div>
 </body>
+
 </html>
